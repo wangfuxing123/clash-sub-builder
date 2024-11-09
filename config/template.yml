@@ -4,5 +4,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - name: US NEW YORK CITY
+    server: 162.243.103.245
+    port: 28154
+    type: VLESS
+    uuid: a3d0a376-e68a-4ab4-aa2c-99c58d5fcbcc
+    alterId: 0
+    cipher: auto
+    tls: flase
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /bbbb
+    udp: true
 proxy-groups:
 rules:

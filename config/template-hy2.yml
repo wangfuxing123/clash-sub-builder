@@ -1,0 +1,19 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - {name: Misaka-Hysteria2, server: 162.243.103.245, port: 28152, client-fingerprint: chrome, type: hysteria2, password: cbbf74b3, auth: cbbf74b3, sni: www.bing.com, skip-cert-verify: ture, udp:ture}
+proxy-groups:
